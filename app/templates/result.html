@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Classificadores</title>
+    <link rel="stylesheet" href="../static/styles.css" />
+</head>
+<body>
+    <h2>Resultado</h2>
+    <div class="result-container">
+        <p>Accuracy: {{ accuracy }}</p>
+        <p>Precision: {{ precision }}</p>
+        <p>Recall: {{ recall }}</p>
+        <p>F1 Score: {{ f1 }}</p>
+    </div>
+
+    <div class="confusion-matrix">
+        <img src="data:image/png;base64,{{ matriz_confusao }}" alt="Matiz de Confusão">
+    </div>
+
+    <a href="/" class="button">Voltar</a>
+
+</body>
+</html>
